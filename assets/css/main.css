@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Mulish:wght@700&family=Poppins:wght@500&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+li {
+  list-style: none;
+}
+
+select, input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+body {
+  background: #E6EAF8;
+  height: 100vh;
+  padding: 173px 194px;
+}
+
+/* 
+Use any margin is below.
+
+.-mb-lg {
+  margin-bottom: $lg;
+}
+
+*/
+/* 
+Use any gap is below.
+
+.-gap-xxs {
+  gap: $xxs;
+}
+
+*/
+/* 
+Use any margin is below.
+
+.-pd-lg {
+  padding: $lg;
+}
+
+*/
+.-pd-lg {
+  padding: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  height: 1200px;
+}
