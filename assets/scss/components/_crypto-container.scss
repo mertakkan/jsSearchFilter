@@ -1,9 +1,7 @@
 .crypto-container {
     @include flex(column, center, center);
     overflow-y: scroll;
-    gap: $md;
-    margin: 0;
-    max-height: calc(800px - 60px); 
+    padding-top: $xs;
 
     &::-webkit-scrollbar {
         width: 10px; // Set the width of the scrollbar

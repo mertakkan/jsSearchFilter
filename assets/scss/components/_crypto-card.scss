@@ -2,13 +2,12 @@
   @include flex(column, center, center);
   width: 400px;
   height: 200px;
-  margin: 0;
   padding: $xl;
   font-family: $second-font;
   font-weight: $font-medium;
-  gap: $md;
   border-radius: $r-lg;
   background-color: $ghost;
+  margin-bottom: $sm;
   @include box-shadow(0px, 1px, 1px, $periwinkle-light);
   
   
