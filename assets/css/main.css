@@ -26,6 +26,15 @@ body {
   padding: 173px 194px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
+}
+
 /* 
 Use any margin is below.
 
@@ -59,10 +68,13 @@ Use any margin is below.
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
   background-color: #FFFFFF;
-  padding: 100px;
+  padding: 70px;
   border-radius: 16px;
-  width: 1000px;
+  box-shadow: 0px 4px 4px #BCC6E7;
+  width: 500px;
   height: 700px;
 }
 
@@ -72,6 +84,8 @@ Use any margin is below.
   flex-direction: column;
   justify-content: baseline;
   align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 0px;
   gap: 24px;
   align-self: stretch;
   position: sticky;
@@ -83,6 +97,8 @@ Use any margin is below.
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
   align-self: stretch;
 }
 .header .search-form {
@@ -90,11 +106,12 @@ Use any margin is below.
   flex-direction: row;
   justify-content: baseline;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
   border: 1px solid #BFC8E5;
   border-radius: 4px;
   padding: 16px;
   width: 100%;
-  max-width: 327px;
   gap: 8px;
 }
 
@@ -102,10 +119,26 @@ Use any margin is below.
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
   overflow-y: scroll;
   gap: 16px;
+  margin: 0;
   max-height: 740px;
+}
+.crypto-container::-webkit-scrollbar {
+  width: 10px;
+}
+.crypto-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.crypto-container::-webkit-scrollbar-thumb {
+  background: #849FFF;
+  border-radius: 10px;
+}
+.crypto-container::-webkit-scrollbar-thumb:hover {
+  background: #516FD4;
 }
 
 .input {
@@ -123,15 +156,21 @@ Use any margin is below.
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+  gap: 0px;
   width: 400px;
   height: 200px;
+  margin: 0;
   padding: 24px;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
   gap: 16px;
   border-radius: 16px;
   background-color: #FBFCFF;
+  box-shadow: 0px 1px 1px #BFC8E5;
 }
 .crypto-card:hover {
   border: 1px solid #BFC8E5;
   border-radius: 16px;
-  box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+  box-shadow: 0px 8px 15px #BFC8E5;
 }/*# sourceMappingURL=main.css.map */

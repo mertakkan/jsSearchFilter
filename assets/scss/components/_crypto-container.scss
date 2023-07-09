@@ -1,6 +1,24 @@
 .crypto-container {
-    @include flex(column, center, flex-start);
+    @include flex(column, center, center);
     overflow-y: scroll;
     gap: $md;
+    margin: 0;
     max-height: calc(800px - 60px); 
+
+    &::-webkit-scrollbar {
+        width: 10px; // Set the width of the scrollbar
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1; // Set the background color of the track
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $cornflower-blue; // Set the color of the scroll thumb
+        border-radius: 10px; // Set the border radius of the scroll thumb
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $royal-blue; // Set the hover color of the scroll thumb
+    }
 }

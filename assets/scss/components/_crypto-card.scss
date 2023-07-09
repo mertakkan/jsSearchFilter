@@ -2,13 +2,19 @@
   @include flex(column, center, center);
   width: 400px;
   height: 200px;
+  margin: 0;
   padding: $xl;
+  font-family: $second-font;
+  font-weight: $font-medium;
   gap: $md;
   border-radius: $r-lg;
   background-color: $ghost;
+  @include box-shadow(0px, 1px, 1px, $periwinkle-light);
+  
+  
 
   &:hover {
     @include border(1px, solid, $periwinkle-light, $r-lg);
-    @include box-shadow(0px, 8px, 23px, rgba(218, 224, 249, 0.7))
+    @include box-shadow(0px, 8px, 15px, $periwinkle-light)
   }
 }
