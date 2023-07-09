@@ -1,0 +1,8 @@
+.frame {
+    @include flex(column, center, center);
+    background-color: $white;
+    padding: $xxxl;
+    border-radius: $r-lg;
+    width: 1000px;
+    height: 700px;
+}

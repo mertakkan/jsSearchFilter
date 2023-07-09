@@ -1,0 +1,14 @@
+.crypto-card {
+  @include flex(column, center, center);
+  width: 400px;
+  height: 200px;
+  padding: $xl;
+  gap: $md;
+  border-radius: $r-lg;
+  background-color: $ghost;
+
+  &:hover {
+    @include border(1px, solid, $periwinkle-light, $r-lg);
+    @include box-shadow(0px, 8px, 23px, rgba(218, 224, 249, 0.7))
+  }
+}

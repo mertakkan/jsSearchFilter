@@ -1,0 +1,6 @@
+.crypto-container {
+    @include flex(column, center, flex-start);
+    overflow-y: scroll;
+    gap: $md;
+    max-height: calc(800px - 60px); 
+}

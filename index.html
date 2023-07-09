@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <title>Project</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>JavaScript Search Filter Project</title>
   </head>
 
   <body>
-    <section class="card -pd-lg">
-
+    <section class="frame">
+        <header class="header">
+          <div class="header__elements">
+            <div class="search-form">
+              <img class="search-form__icon" src="./assets/icons/search.svg" alt="search-icon" />
+              <input class="input -search" type="text" id="search" placeholder="Search cryptocurrencies" />
+            </div>
+          </div>
+        </header>
+        <div class="crypto-container" id="crypto-list"></div>
     </section>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

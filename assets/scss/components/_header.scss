@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    @include flex(column, baseline, flex-start);
+    gap: $xl;
+    align-self: stretch;
+    position: sticky;
+    top: 0;
+    padding-bottom: $xxl;
+  
+    &__elements {
+      @include flex(row, space-between, center);
+      align-self: stretch;
+    }
+    
+    .search-form {
+        @include flex(row, baseline, center);
+        @include border(1px, solid, $periwinkle-light, $r-xs);
+        padding: $md;
+        width: 100%;
+        max-width: 327px;
+        gap: $sm;
+    }
+  }
