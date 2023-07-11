@@ -3,20 +3,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const list = document.getElementById("crypto-list");
   let cryptoData = [];
 
-  fetch("https://api.coingecko.com/api/v3/coins/list")
-    .then((response) => response.json())
-    .then((data) => {
-      cryptoData = data;
-      displayCryptos(cryptoData);
-    });
+  function fetchCryptoData() {
+    fetch("https://api.coingecko.com/api/v3/coins/list")
+      .then((response) => response.json())
+      .then((data) => {
+        cryptoData = data;
+        displayCryptos(cryptoData);
+      });
+  }
 
-  search.addEventListener("input", (event) => {
+  function filterCryptoData(event) {
     const searchText = event.target.value.toLowerCase();
     const filteredData = cryptoData.filter((crypto) =>
       crypto.name.toLowerCase().includes(searchText)
     );
     displayCryptos(filteredData);
-  });
+  }
 
   function displayCryptos(data) {
     list.innerHTML = "";
@@ -27,4 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
       list.appendChild(cryptoElement);
     });
   }
+
+  search.addEventListener("input", filterCryptoData);
+
+  fetchCryptoData();
 });
